@@ -16,7 +16,7 @@ get_header(); ?>
 		while ( have_posts() ) : the_post();
 
 			// Include the single post content template.
-			get_template_part( 'template-parts/content', 'service' );
+			get_template_part( 'template-parts/content', 'service' ); //means that it will access the template-parts/content-service file
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) {
@@ -40,8 +40,9 @@ get_header(); ?>
 				) );
 			}
 
-			echo types_render_field("image", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2"));
-			echo types_render_field("date", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2"));
+			//These commands were used to display the custom fields 
+			//echo types_render_field("image", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2"));
+			//echo types_render_field("date", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2"));
 
 			// End of the loop.
 		endwhile;
