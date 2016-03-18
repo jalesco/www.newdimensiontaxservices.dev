@@ -15,12 +15,14 @@ get_header(); ?>
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
+
+
 			</header><!-- .page-header -->
 
 			<!--Display custom post types as page begin-->
 			<?php $args = array(
-		 	'post_type'=>'service',
-		 	'orderby'=>'title',
+		 	'post_type'=> 'service',
+		 	'orderby'=> 'title',
 		 	'order'=>'ASC',
 		 	'showposts'=>'300'
 		 	); 
@@ -29,13 +31,11 @@ get_header(); ?>
 			?>
 			<!--End of display custom post types-->
 
-			<?php
-			// Start the Loop.
-			while ( $service->have_posts() ) : $service->the_post();
 
-				?>
 
-				<p class = "service-list">
+			<?php while ( $service->have_posts() ) : $service->the_post(); ?>			
+
+				<ul class = "service-list">
 					<!--<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> within href, make the link the link of the custom post type-->
 					<h1> <?php the_title(); ?> </h1>
 
@@ -51,12 +51,14 @@ get_header(); ?>
 					}
 		    		?>
 
-			    </p>			
+
+			    </ul>			
 
 		<?php
 
 			// End the loop.
 			endwhile;
+
 
 			// Previous/next page navigation.
 			the_posts_pagination( array(
@@ -77,3 +79,4 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+

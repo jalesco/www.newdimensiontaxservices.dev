@@ -44,6 +44,13 @@ get_header(); ?>
 			//echo types_render_field("image", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2"));
 			//echo types_render_field("date", array("argument1"=>"value1","argument2"=>"value2","argument2"=>"value2"));
 
+			<?php 
+			//This allows us to customize the display of the custom taxonomy
+			//The class that we assign will allow us to customize how it looks in CSS
+			//format(post id, beginning (can be beginning of tag), separator, end tag)
+				echo get_the_term_list( $post->ID, 'preparer', '<div class="service_items">', '<br> ', '</div>' ) 
+			?>	
+
 			// End of the loop.
 		endwhile;
 		?>

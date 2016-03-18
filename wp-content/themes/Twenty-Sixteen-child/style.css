@@ -21,4 +21,10 @@
 	display: none;
 }
 
+.entry-title{
+	display: none;
+}
 
+.schedule{
+	list-style: none;
+}
