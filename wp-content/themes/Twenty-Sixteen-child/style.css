@@ -12,6 +12,13 @@
  /* == Add your own styles below this line ==
 --------------------------------------------*/
 
-.site-header{
+.site-description{
 	/*background-image: url("img/oil painting - rainy night.jpg");*/
+	display: none;
 }
+
+.page-title{
+	display: none;
+}
+
+

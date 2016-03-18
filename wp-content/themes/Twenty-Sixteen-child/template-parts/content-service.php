@@ -46,16 +46,13 @@
 				get_template_part( 'template-parts/biography' );
 			}
 		?>
-
-		
-
-
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 			<?php 
 			//This allows us to customize the display of the custom taxonomy
-			//The class that we assasign will allow us to customize how it looks in CSS
+			//The class that we assign will allow us to customize how it looks in CSS
+			//format(post id, beginning (can be beginning of tag), separator, end tag)
 			echo get_the_term_list( $post->ID, 'preparer', '<div class="service_items">', '<br> ', '</div>' ) 
 			?>
 
