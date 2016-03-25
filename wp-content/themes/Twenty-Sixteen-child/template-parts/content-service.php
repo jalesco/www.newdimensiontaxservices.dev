@@ -49,12 +49,14 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-			<?php 
-			//This allows us to customize the display of the custom taxonomy
-			//The class that we assign will allow us to customize how it looks in CSS
-			//format(post id, beginning (can be beginning of tag), separator, end tag)
-			echo get_the_term_list( $post->ID, 'preparer', '<div class="service_items">', '<br> ', '</div>' ) 
-			?>
+			<ul>
+				<?php 
+				//This allows us to customize the display of the custom taxonomy
+				//The class that we assign will allow us to customize how it looks in CSS
+				//format(post id, beginning (can be beginning of tag), separator, end tag)
+				echo get_the_term_list( $post->ID, 'preparer', '<li class="service_items">', '<br> ', '</li>' ) 
+				?>
+			</ul>
 
 		<?php twentysixteen_entry_meta(); 
 			//the_taxonomies(); //outputs the custom taxonomies

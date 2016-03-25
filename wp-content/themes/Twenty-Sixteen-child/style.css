@@ -28,3 +28,12 @@
 .schedule{
 	list-style: none;
 }
+
+/*This is the class for the footer menu*/
+.menu ul li {
+	color: red;
+}
+
+.menu .current-menu-item {
+	color: green;
+}
