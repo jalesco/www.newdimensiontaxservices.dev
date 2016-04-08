@@ -38,13 +38,17 @@
 				</nav><!-- .social-navigation -->
 			<?php endif; ?>
 
+
 			<?php 
 
-			//Make custom menu appear
+			//Make custom menu appear. 
 			wp_nav_menu( array( 'theme_location' => 'custom-menu', 'container_class' => 'footer_custom_menu' ) ); 
 			
 
 			?>
+
+
+
 
 			<div class="site-info">
 				
