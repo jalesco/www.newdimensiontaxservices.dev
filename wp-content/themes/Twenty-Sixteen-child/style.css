@@ -30,6 +30,10 @@
 }
 
 /*This is the class for the footer menu*/
-.menu ul {
+.footer_custom_menu .menu {
 	list-style-type:none;
+}
+
+.footer_custom_menu .menu li {
+	display:inline;
 }
