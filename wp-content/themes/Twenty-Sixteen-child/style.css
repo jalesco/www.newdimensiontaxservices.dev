@@ -27,6 +27,8 @@
 
 .schedule{
 	list-style: none;
+	background-color:grey;
+	border:25px blue;
 }
 
 /*This is the class for the footer menu*/
@@ -34,6 +36,12 @@
 	list-style-type:none;
 }
 
+/*For padding, remember TRBL (padding: T R B L)*/
 .footer_custom_menu .menu li {
 	display:inline;
+	padding-right:10px;
+}
+
+.site-info {
+	display:none;
 }
