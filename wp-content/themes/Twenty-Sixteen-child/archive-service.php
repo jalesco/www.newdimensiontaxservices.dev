@@ -37,8 +37,8 @@ get_header(); ?>
 
 				<!--List the service custom posts -->
 				<ul class = "service-list">
-					<!--<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> --> <!-- within href, make the link the link of the custom post type -->
-					 <h1> <?php the_title(); ?> </h1> 
+					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <!-- within href, make the link the link of the custom post type -->
+					 <!--<h1> <?php the_title(); ?> </h1>-->
 
 					<?php
 					
