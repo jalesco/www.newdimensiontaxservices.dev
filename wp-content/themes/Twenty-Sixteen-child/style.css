@@ -13,8 +13,20 @@
 --------------------------------------------*/
 
 .site-description{
-	/*background-image: url("img/oil painting - rainy night.jpg");*/
 	display: none;
+}
+
+.site-header {
+	background-image: url("img/restaurant.png");
+	background-repeat:none;
+	background-size: cover;
+	
+}
+
+
+.homerow{
+	background-size: cover;
+	
 }
 
 .page-title{
@@ -25,10 +37,9 @@
 	display: none;
 }
 
-.schedule{
-	list-style: none;
-	background-color:grey;
-	border:25px blue;
+.schedule {
+	padding-left:20px;
+	list-style-type:none;
 }
 
 /*This is the class for the footer menu*/

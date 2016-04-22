@@ -8,6 +8,8 @@
 
 // this code loads the parent's stylesheet (leave it in place unless you know what you're doing)
 
+  //THemes use enqueues to load css or javascript
+
 function theme_enqueue_styles() {
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css', array($parent_style));
