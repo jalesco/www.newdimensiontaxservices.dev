@@ -12,6 +12,10 @@
  /* == Add your own styles below this line ==
 --------------------------------------------*/
 
+.header-wrap.overlay {
+	position: relative !important;
+}
+
 .schedule ul{list-style-type: none}
 
 .trail-end{display:none;}
@@ -20,9 +24,16 @@
 
 .page-title-bar-retina{}
 
-.main-header{background-color:black;}
+.main-header{
+	background-color:black;
+
+}
 
 .site-search-toggle{display: none;}
 
+.footer_custom_menu ul li{
+	display:inline;
+	list-style-type: none;
+}
 
 
