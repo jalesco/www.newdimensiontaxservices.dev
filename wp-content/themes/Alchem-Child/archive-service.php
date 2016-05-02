@@ -57,7 +57,7 @@ $title_bar_css_class = 'parallax-scrolling';
 					
 					//display custom field if there is a description entered
 
-					
+					/*
 					if($service_descrip = get_post_meta(get_the_ID(), 'Description',true)) {
 						echo '<br>'.$service_descrip;
 		    		} //end if for displaying service description
@@ -66,9 +66,10 @@ $title_bar_css_class = 'parallax-scrolling';
 		    		if($service_price = get_post_meta(get_the_ID(), 'Price',true)) { //will display the "Price" post meta that has already been saved to database
 						echo '$'.$service_price;
 					}
+					*/
 					
 
-					//THis is how to output using advanced custom fields
+					//THis is how to output using advanced custom fields plug-in
 					the_field('long_description'); ?> 
 					<?php the_field('price'); ?>
 
