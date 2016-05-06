@@ -16,7 +16,11 @@
 	position: relative !important;
 }
 
-.schedule ul{list-style-type: none}
+.schedule ul{
+	list-style-type: none;
+	padding-left: 40px;
+}
+
 
 .trail-end{display:none;}
 
@@ -34,6 +38,16 @@
 .footer_custom_menu ul li{
 	display:inline;
 	list-style-type: none;
+	padding-right: 20px;
 }
 
 .service-list{padding-left: 60px;}
+
+.testimonial-list{
+	list-style-type: none;
+	font-size: large;
+}
+
+.site-info{display: none;}
+
+.trail-begin{display:none;}
