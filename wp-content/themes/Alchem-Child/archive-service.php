@@ -46,41 +46,30 @@ $title_bar_css_class = 'parallax-scrolling';
 			<!--End of display custom post types-->
 
 
-
+			
+			
 			<?php while ( $service->have_posts() ) : $service->the_post(); ?>			
 
+
 				<!--List the service custom posts -->
-				<ul class = "service-list">
+
+
 					<!--<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> within href, make the link the link of the custom post type -->
-					 <h2> <?php the_title(); ?> </h2>
-					<?php
-					
-					//display custom field if there is a description entered
-
-					/*
-					if($service_descrip = get_post_meta(get_the_ID(), 'Description',true)) {
-						echo '<br>'.$service_descrip;
-		    		} //end if for displaying service description
-
-		    		//display custom field, "Price", if there is a price entered
-		    		if($service_price = get_post_meta(get_the_ID(), 'Price',true)) { //will display the "Price" post meta that has already been saved to database
-						echo '$'.$service_price;
-					}
-					*/
-					
-
-					//THis is how to output using advanced custom fields plug-in
-					the_field('long_description'); ?> 
+				<ul class="service-list">
+						<li> <h2> <?php the_title(); ?> </h2> </li>
+						<p> <?php the_field('long_description'); ?> </p>
+					 
 					<?php the_field('price'); ?>
+				</ul>
 
 
-			    </ul>			
+			    	
+						
 
 		<?php
 
 			// End the loop.
 			endwhile;
-
 
 			// Previous/next page navigation.
 			the_posts_pagination( array(
